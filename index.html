@@ -16,7 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>goit-markup-hw-06</title>
+    <title>goit-markup-hw-07</title>
   </head>
 
   <body>
@@ -30,27 +30,28 @@
           </a>
 
           <ul class="side-nav">
-            <li class="nav-list">
-              <a class="link current" href="./">Студия</a>
+            <li class="side-nav__item">
+              <a class="side-nav__link side-nav__link--current" href="./">Студия</a>
             </li>
-            <li class="nav-list">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav-list"><a class="link" href="">Контакты</a></li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="">Контакты</a></li>
           </ul>
         </nav>
         <ul class="login-nav">
-          <li class="item login">
-            <a href="mailto:info@devstudio.com" class="link mail">
-              <svg width="16" height="12" class="icon-mail">
+          <li class="login-nav__item">
+            <a href="mailto:info@devstudio.com" class="login-nav__link--mail">
+              <svg width="16" height="12" class="login-nav__icon--mail">
                 <use href="./images/icons.svg#envelope-hover"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item login">
-            <a href="tel:+380961111111" class="link mail">
-              <svg width="10" height="16" class="icon-mail">
+          <li class="login-nav__item">
+             <a href="tel:+380961111111" class="login-nav__link--mail">
+              <svg width="10" height="16" class="login-nav__icon--mail">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -66,8 +67,8 @@
 
       <section class="hero background">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="button primary" type="button" data-modal-open>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button class="button--primary" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -78,30 +79,30 @@
         <h2 hidden>Преемущества</h2>
         <div class="container">
           <ul class="advatages-list">
-            <li class="item item-adv-list">
-              <h3 class="advantages-title">Внимание к деталям</h3>
-              <p class="advantages-par">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Внимание к деталям</h3>
+              <p class="advantages__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item item-adv-list time">
-              <h3 class="advantages-title">Пунктуальность</h3>
-              <p class="advantages-par">
+            <li class="advantages__item advantages__item--diagram">
+              <h3 class="advantages__title">Пунктуальность</h3>
+              <p class="advantages__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item item-adv-list diagram">
-              <h3 class="advantages-title">Планирование</h3>
-              <p class="advantages-par">
+            <li class="advantages__item advantages__item--clock">
+              <h3 class="advantages__title">Планирование</h3>
+              <p class="advantages__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item item-adv-list cosmos">
-              <h3 class="advantages-title">Современные технологии</h3>
-              <p class="advantages-par">
+            <li class="advantages__item advantages__item--cosmos">
+              <h3 class="advantages__title">Современные технологии</h3>
+              <p class="advantages__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -112,26 +113,26 @@
 
       <!-- pictures section-->
 
-      <section class="do section">
+      <section class="works section">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="section-list">
-            <li class="item section-items">
+          <h2 class="works__title">Чем мы занимаемся</h2>
+          <ul class="works__list">
+            <li class="works__item">
               <img src="./images/box1.jpg" width="370" alt="кодинг" />
-              <div class="section-background">
-                <p class="advantages-title white">Десктопные приложения</p>
+              <div class="works__background">
+                <p class="works__text">Десктопные приложения</p>
               </div>
             </li>
-            <li class="item section-items">
+            <li class="works__item">
               <img src="./images/box2.jpg" width="370" alt="Планирование" />
-              <div class="section-background">
-                <p class="advantages-title white">Мобильные приложения</p>
+              <div class="works__background">
+                <p class="works__text">Мобильные приложения</p>
               </div>
             </li>
-            <li class="item section-items">
+            <li class="works__item">
               <img src="./images/box3.jpg" width="370" alt="дизайн" />
-              <div class="section-background">
-                <p class="advantages-title white">Дизайнерские решения</p>
+              <div class="works__background">
+                <p class="works__text">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
@@ -139,7 +140,6 @@
       </section>
 
       <!-- team section-->
-
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
@@ -148,7 +148,6 @@
               <img
                 src="./images/photo1.jpg"
                 width="270"
-                height="260"
                 alt="фото дизайнера"
               />
               <div class="team-card">
@@ -347,6 +346,7 @@
           </ul>
         </div>
       </section>
+ 
       <!-- clients -->
 
       <section class="clients section">
