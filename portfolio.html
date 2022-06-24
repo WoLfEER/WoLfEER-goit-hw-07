@@ -19,36 +19,42 @@
   </head>
   <body>
     <!-- HEADER-->
-    <header class="page-header">
-      <div class="container main-nav">
-        <nav class="main-nav">
+    <header class="header">
+      <div class="header__nav container">
+        <nav class="header__nav">
           <a href="./" class="logo">
             <!-- <img src="./images/WebStudio.svg" alt="логотип"> -->
             Web<span class="logo-color">Studio</span>
           </a>
 
           <ul class="side-nav">
-            <li class="nav-list">
-              <a class="link" href="./">Студия</a>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="./">Студия</a>
             </li>
-            <li class="nav-list">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
+            <li class="side-nav__item">
+              <a
+                class="side-nav__link side-nav__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="nav-list"><a class="link" href="">Контакты</a></li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="login-nav">
-          <li class="item login">
-            <a href="mailto:info@devstudio.com" class="link mail">
-              <svg width="16" height="12" class="icon-mail">
+          <li class="login-nav__item">
+            <a href="mailto:info@devstudio.com" class="login-nav__link--mail">
+              <svg width="16" height="12" class="login-nav__icon--mail">
                 <use href="./images/icons.svg#envelope-hover"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item login">
-            <a href="tel:+380961111111" class="link mail">
-              <svg width="10" height="16" class="icon-mail">
+          <li class="login-nav__item">
+            <a href="tel:+380961111111" class="login-nav__link--mail">
+              <svg width="10" height="16" class="login-nav__icon--mail">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -82,61 +88,61 @@
           </ul>
 
           <h1 hidden>Наши работы</h1>
-          <ul class="image-list">
-            <li class="flex-item">
-              <a href="" class="link card-link">
-                <div class="card-subtitle">
+          <ul class="image">
+            <li class="image__item">
+              <a href="" class="image__link link">
+                <div class="image__subtitle">
                   <img src="./images/img1.jpg" width="370" alt="веб-сайт" />
-                  <p class="white-title">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="card">
-                  <h2 class="image-title">Технокряк</h2>
-                  <p class="image-subtitle">Веб-сайт</p>
+                  <h2 class="card__title">Технокряк</h2>
+                  <p class="card__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-item">
-              <a href="" class="link card-link">
-                <div class="card-subtitle">
+            <li class="image__item">
+              <a href="" class="image__link link">
+                <div class="image__subtitle">
                   <img
                     src="./images/img2.jpg"
                     width="370"
                     alt="постер с баскетболистами"
                   />
-                  <p class="white-title">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="card">
-                  <h2 class="image-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="image-subtitle">Дизайн</p>
+                  <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="card__subtitle">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-item">
-              <a href="" class="link card-link">
-                <div class="card-subtitle">
+            <li class="image__item">
+              <a href="" class="image__link link">
+                <div class="image__subtitle">
                   <img
                     src="./images/img3.jpg"
                     width="370"
                     alt="логотип рыбного ресторана"
                   />
-                  <p class="white-title">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-subtitle">
-                  <p class="white-title">
+                <div class="image__subtitle">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -144,51 +150,51 @@
                 </div>
 
                 <div class="card">
-                  <h2 class="image-title">Ресторан Seafood</h2>
-                  <p class="image-subtitle">Приложение</p>
+                  <h2 class="card__title">Ресторан Seafood</h2>
+                  <p class="card__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-item">
-              <a href="" class="link card-link">
-                <div class="card-subtitle">
+            <li class="image__item">
+              <a href="" class="image__link link">
+                <div class="image__subtitle">
                   <img src="./images/img4.jpg" width="370" alt="Наушники" />
-                  <p class="white-title">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="card">
-                  <h2 class="image-title">Проект Prime</h2>
-                  <p class="image-subtitle">Маркетинг</p>
+                  <h2 class="card__title">Проект Prime</h2>
+                  <p class="card__subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-item">
-              <a href="" class="link card-link">
-                <div class="card-subtitle">
+            <li class="image__item">
+              <a href="" class="image__link link">
+                <div class="image__subtitle">
                   <img src="./images/img5.jpg" width="370" alt="коробки" />
-                  <p class="white-title">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="card">
-                  <h2 class="image-title">Проект Boxes</h2>
-                  <p class="image-subtitle">Приложение</p>
+                  <h2 class="card__title">Проект Boxes</h2>
+                  <p class="card__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-item">
-              <a href="" class="link card-link">
-                <div class="card-subtitle">
+            <li class="image__item">
+              <a href="" class="image__link link">
+                <div class="image__subtitle">
                   <img src="./images/img6.jpg" width="370" alt="веб-сайт" />
-                  <p class="white-title">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
@@ -196,59 +202,59 @@
                 </div>
 
                 <div class="card">
-                  <h2 class="image-title">Inspiration has no Borders</h2>
-                  <p class="image-subtitle">Веб-сайт</p>
+                  <h2 class="card__title">Inspiration has no Borders</h2>
+                  <p class="card__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-item">
-              <a href="" class="link card-link">
-                <div class="card-subtitle">
+            <li class="image__item">
+              <a href="" class="image__link link">
+                <div class="image__subtitle">
                   <img src="./images/img7.jpg" width="370" alt="журнал" />
-                  <p class="white-title">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="card">
-                  <h2 class="image-title">Издание Limited Edition</h2>
-                  <p class="image-subtitle">Дизайн</p>
+                  <h2 class="card__title">Издание Limited Edition</h2>
+                  <p class="card__subtitle">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-item">
-              <a href="" class="link card-link">
-                <div class="card-subtitle">
+            <li class="image__item">
+              <a href="" class="image__link link">
+                <div class="image__subtitle">
                   <img src="./images/img8.jpg" width="370" alt="бирка" />
-                  <p class="white-title">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="card">
-                  <h2 class="image-title">Проект LAB</h2>
-                  <p class="image-subtitle">Маркетинг</p>
+                  <h2 class="card__title">Проект LAB</h2>
+                  <p class="card__subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="flex-item">
-              <a href="" class="link card-link">
-                <div class="card-subtitle">
+            <li class="image__item">
+              <a href="" class="image__link link">
+                <div class="image__subtitle">
                   <img src="./images/img9.jpg" width="370" alt="ноутбук" />
-                  <p class="white-title">
+                  <p class="image__title">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="card">
-                  <h2 class="image-title">Growing Business</h2>
-                  <p class="image-subtitle">Приложение</p>
+                  <h2 class="card__title">Growing Business</h2>
+                  <p class="card__subtitle">Приложение</p>
                 </div>
               </a>
             </li>
@@ -258,31 +264,35 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-address">
-        <div class="foooter-address-cont">
-          <a class="footer-logo" href="/">
-            Web<span class="footer-color">Studio</span>
+      <div class="footer__address container">
+        <div class="footer_wrapper">
+          <a class="footer__logo" href="/">
+            Web<span class="footer-color white">Studio</span>
             <!-- <img src="./images/WebStudio.svg" alt="logo"> -->
           </a>
           <address>
-            <ul class="footer-title">
-              <li class="footer-list">
+            <ul class="footer__list">
+              <li class="footer__item">
                 <a
-                  class="link"
+                  class="footer__link"
                   href="https://goo.gl/maps/xrUxvXRaoUCYZm5W7"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   г. Киев, пр-т Леси Украинки, 26</a
-                >v
+                >
               </li>
-              <li class="footer-list">
-                <a class="link mail-footer" href="mailto:info@example.com"
+              <li class="footer__item">
+                <a
+                  class="footer__link footer__link--secondary"
+                  href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-list">
-                <a class="link mail-footer" href="tel:+380991111111"
+              <li class="footer__item">
+                <a
+                  class="footer__link footer__link--secondary"
+                  href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -291,36 +301,54 @@
         </div>
         <div class="footer-soc">
           <h3 class="advantages-title white">присоединяйтесь</h3>
-          <ul class="footer-soc-list">
-            <li class="footer-soc-item">
-              <a class="footer-soc-link" href="">
-                <svg class="footer-soc-icon white" width="20">
+          <ul class="footer-soc__list">
+            <li class="footer-soc__item">
+              <a class="footer-soc__link" href="">
+                <svg class="footer-soc__icon white" width="20" height="20">
                   <use href="images/icons.svg#instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-soc-item">
-              <a class="footer-soc-link" href="">
-                <svg class="footer-soc-icon white" width="20">
+            <li class="footer-soc__item">
+              <a class="footer-soc__link" href="">
+                <svg class="footer-soc-icon white" width="20" height="20">
                   <use href="images/icons.svg#twitter-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-soc-item">
-              <a class="footer-soc-link" href="">
-                <svg class="footer-soc-icon white" width="20">
+            <li class="footer-soc__item">
+              <a class="footer-soc__link" href="">
+                <svg class="footer-soc-icon white" width="20" height="20">
                   <use href="images/icons.svg#facebook-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-soc-item">
-              <a class="footer-soc-link" href="">
-                <svg class="footer-soc-icon white" width="20">
+            <li class="footer-soc__item">
+              <a class="footer-soc__link" href="">
+                <svg class="footer-soc__icon white" width="20" height="20">
                   <use href="images/icons.svg#linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe__title white">Подпишитесь на рассылку</p>
+          <form class="subscribe__form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="subscribe__input"
+              placeholder="E-mail"
+            />
+            <button class="footer__button button--primary" type="submit">
+              Подписаться
+              <svg class="subscibe-icon" width="24" height="24">
+                <use href="images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
