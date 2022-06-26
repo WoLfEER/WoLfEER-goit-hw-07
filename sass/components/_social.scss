@@ -1,4 +1,3 @@
-
 .footer-soc__list {
     display: flex;
     margin-top: 20px;
@@ -13,12 +12,13 @@
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
 }
 
-.footer-soc__link:hover,
-.footer-soc__link:focus {
-    background-color: var(--accent-color);
-}
+
 
 .footer-soc__item+.footer-soc__item {
     margin-left: 10px;

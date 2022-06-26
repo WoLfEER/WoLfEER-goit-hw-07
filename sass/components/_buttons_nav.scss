@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    .button-nav .item+.item {
+            margin-left: 8px;
+        }
 }
 
-.button-nav .item+.item {
-    margin-left: 8px;
-}

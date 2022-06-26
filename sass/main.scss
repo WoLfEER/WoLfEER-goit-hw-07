@@ -1,17 +1,18 @@
-@import "./base/reset";
-@import "./base/normalize";
 @import "./utils/vars";
+@import "./utils/reset";
+@import "./utils/adjustment";
 @import "./utils/container";
-@import "./utils/placeholders/placeholders";
-@import "./utils/placeholders/visually-hidden";
+@import "./utils/hidden";
 
-
-@import "./components/logo";
-@import "./components/socials";
+@import "./components/header-nav";
+@import "./components/section-title";
+@import "./components/team-card";
+@import "./components/social";
 @import "./components/subscribe";
-@import "./components/buttons-nav";
-@import "./components/card";
-@import "./utils/placeholders/buttons";
+@import "./components/logo";
+@import "./components/buttons_nav";
+@import "./components/button";
+@import "./components/card-image";
 
 
 @import "./layouts/header";
@@ -22,9 +23,7 @@
 @import "./layouts/clients";
 @import "./layouts/footer";
 @import "./layouts/image-section";
-@import "./layouts/modal";
-
-
+@import "./layouts/modal-window";
 
 
 
