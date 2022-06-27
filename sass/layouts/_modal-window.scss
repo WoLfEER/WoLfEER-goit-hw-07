@@ -92,16 +92,16 @@
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
-    &:hover,
+        &:hover,
         .form__text-area:hover,
         &:focus,
         .form__text-area:focus {
             border: 1px solid var(--accent-color);
         }
-                &:focus+.form__icon,
-                &:hover+.form__icon {
-                    fill: var(--accent-color);
-                }
+        &:focus+.form__icon,
+         &:hover+.form__icon {
+            fill: var(--accent-color);
+          }
 }
 
 
@@ -141,8 +141,8 @@
     display: flex;
     margin-right: 7px;
     &:focus+span::before,
-        &:hover+span::before {
-            border-color: var(--accent-color);
+    &:hover+span::before {
+        border-color: var(--accent-color);
         }
 }
 

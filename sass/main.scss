@@ -1,9 +1,11 @@
 @import "./utils/vars";
 @import "./utils/reset";
-@import "./utils/adjustment";
-@import "./utils/container";
-@import "./utils/hidden";
 @import "./utils/mixins";
+
+@import "./base/adjustment";
+@import "./base/container";
+@import "./utils/hidden";
+
 
 @import "./components/header-nav";
 @import "./components/section-title";
@@ -14,6 +16,7 @@
 @import "./components/buttons_nav";
 @import "./components/button";
 @import "./components/card-image";
+@import "./base/section";
 
 
 @import "./layouts/header";
